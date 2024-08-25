@@ -39,123 +39,207 @@
     <!-- Raw CSS -->
 </head>
 <body class="font-montserrat">
-    <header class="bg-[#1A187A]">
+    <header>
         <!-- Navbar Section -->
-        <nav class="border-2 border-green-500 flex justify-between items-center md:container mx-auto px-2 my-5">
-          <!-- Navbar Start -->
-            <div class="w-1/2 lg:w-2/12 flex-start">
-              <button>
-                <img src="images/logo.png" alt="" class="w-full">
-              </button>
-            </div>
-            <!-- Navbar Center -->
-            <div class="w-[30%] hidden lg:flex">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered pl-10" />
+        <nav class="bg-[#1A187A]">
+            <section class="border-2 border-green-500 flex justify-between items-center md:container mx-auto px-2 mt-5">
+                <!-- Navbar Start -->
+              <div class="w-1/2 lg:w-2/12 flex-start">
+                <button>
+                  <img src="images/logo.png" alt="" class="w-full">
+                </button>
               </div>
-            </div>
-            <!-- Navbar End -->
-            <div class="flex items-center justify-between lg:justify-end gap-5">
-              <!-- Main Navigation Links -->
-              <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
-                <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
-                <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+              <!-- Navbar Center -->
+              <div class="w-[30%] hidden lg:flex">
+                <div class="form-control">
+                  <input type="text" placeholder="Search" class="input input-bordered pl-10" />
+                </div>
               </div>
-              <!-- Cart Button -->
-              <div class="hidden lg:flex gap-5">
-                <div class="hidden md:flex dropdown dropdown-left">
-                  <div tabindex="0" role="button" class="btn border-none btn-circle hover">
-                      <div class="indicator">
-                        <img src="images/icon/cart.svg" alt="" class="w-7 h-7">
-                        <span class="indicator-item"></span>
-                      </div>
+              <!-- Navbar End -->
+              <div class="flex items-center justify-between lg:justify-end gap-5">
+                <!-- Main Navigation Links -->
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                  <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
+                  <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
+                  <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+                </div>
+                <!-- Cart Button -->
+                <div class="hidden lg:flex gap-5">
+                  <div class="hidden md:flex dropdown dropdown-left">
+                    <div tabindex="0" role="button" class="btn border-none btn-circle hover">
+                        <div class="indicator">
+                          <img src="images/icon/cart.svg" alt="" class="w-7 h-7">
+                          <span class="indicator-item"></span>
+                        </div>
+                    </div>
+                    <div
+                        tabindex="0"
+                        class="card card-compact dropdown-content bg-base-100 z-[1] mt-14 w-52 shadow">
+                        <div class="card-body">
+                        <span class="text-lg font-bold">0 Items</span>
+                        <span class="text-info">Subtotal: $0</span>
+                        <div class="card-actions">
+                            <button class="btn text-white bg-primary-colour hover:bg-primary-colour btn-block">View cart</button>
+                        </div>
+                        </div>
+                    </div>
                   </div>
-                  <div
+                  <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                      <div class="w-10 rounded-full">
+                        <img
+                          alt="Profile"
+                          src="images/icon/profile.svg"
+                          class="w-6 h-6"
+                        />
+                      </div>
+                    </div>
+                    <ul
                       tabindex="0"
-                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-14 w-52 shadow">
-                      <div class="card-body">
-                      <span class="text-lg font-bold">0 Items</span>
-                      <span class="text-info">Subtotal: $0</span>
-                      <div class="card-actions">
-                          <button class="btn text-white bg-primary-colour hover:bg-primary-colour btn-block">View cart</button>
-                      </div>
-                      </div>
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
+                      <li>
+                        <a class="justify-between">
+                          Profile
+                          <span class="badge bg-primary-colour text-white">New</span>
+                        </a>
+                      </li>
+                      <li><a>Settings</a></li>
+                      <li><a>Logout</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div class="dropdown dropdown-end">
-                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-                    <div class="w-10 rounded-full">
-                      <img
-                        alt="Profile"
-                        src="images/icon/profile.svg"
-                        class="w-6 h-6"
-                      />
-                    </div>
-                  </div>
-                  <ul
-                    tabindex="0"
-                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
-                    <li>
-                      <a class="justify-between">
-                        Profile
-                        <span class="badge bg-primary-colour text-white">New</span>
-                      </a>
-                    </li>
-                    <li><a>Settings</a></li>
-                    <li><a>Logout</a></li>
-                  </ul>
-                </div>
-              </div>
 
-              <!-- Dropdown Menu for Small Device -->
-              <div class="dropdown dropdown-left">
-                <!-- Menu Button -->
-                <div tabindex="0" role="button" class="btn bg-white py-1 border-none lg:hidden">
-                    <img src="images/icon/menu.svg" alt="menubar" class="w-6 md:w-8 h-6 md:h-8">
-                </div>
-                <!-- Menu-->
-                <ul tabindex="0" class="menu menu-xs items-center bg-primary-colour dropdown-content bg-base-100 rounded-box z-[1] mt-8 md:mt-14 w-24 md:w-32 p-0 shadow md:space-y-2">
-                    <div class="flex flex-col gap-2 items-center">
-                        <li>
-                          <div class="form-control">
-                            <input type="text" placeholder="Search" class="input input-bordered h-7 text-center focus:text-left w-full p-0 pl-1" />
-                          </div>
-                        </li>
-                        <li class="flex">
-                            <div class="dropdown dropdown-left hover:bg-white">
-                                <label tabindex="0" role="button" class="bg-white border-none hover:bg-[#acef5fcb] p-1 px-2 rounded-full">
-                                    <div class="indicator">
-                                        <svg 
-                                            xmlns="http://www.w3.org/2000/svg" 
-                                            class="mt-1 h-4 w-4" 
-                                            fill="none" 
-                                            viewBox="0 0 24 24" 
-                                            stroke="currentColor">
-                                            <path 
-                                                stroke-linecap="round" 
-                                                stroke-linejoin="round" 
-                                                stroke-width="2" 
-                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" 
-                                            />
-                                        </svg>
-                                        <span class="indicator-item"></span>
-                                    </div>
-                                </label>
+                <!-- Dropdown Menu for Small Device -->
+                <div class="dropdown dropdown-left">
+                  <!-- Menu Button -->
+                  <div tabindex="0" role="button" class="btn bg-white py-1 border-none lg:hidden">
+                      <img src="images/icon/menu.svg" alt="menubar" class="w-6 md:w-8 h-6 md:h-8">
+                  </div>
+                  <!-- Menu-->
+                  <ul tabindex="0" class="menu menu-xs items-center bg-primary-colour dropdown-content bg-base-100 rounded-box z-[1] mt-8 md:mt-14 w-24 md:w-32 p-0 shadow md:space-y-2">
+                      <div class="flex flex-col gap-2 items-center">
+                          <li>
+                            <div class="form-control">
+                              <input type="text" placeholder="Search" class="input input-bordered h-7 text-center focus:text-left w-full p-0 pl-1" />
                             </div>
-                        </li>
-                    </div>
-                    <!-- Main Navigation Links -->
-                    <div class="flex flex-col items-center">
-                        <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
-                        <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
-                        <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
-                    </div>
-                </ul>
-            </div>
-            </div>
+                          </li>
+                          <li class="flex">
+                              <div class="dropdown dropdown-left hover:bg-white">
+                                  <label tabindex="0" role="button" class="bg-white border-none hover:bg-[#acef5fcb] p-1 px-2 rounded-full">
+                                      <div class="indicator">
+                                          <svg 
+                                              xmlns="http://www.w3.org/2000/svg" 
+                                              class="mt-1 h-4 w-4" 
+                                              fill="none" 
+                                              viewBox="0 0 24 24" 
+                                              stroke="currentColor">
+                                              <path 
+                                                  stroke-linecap="round" 
+                                                  stroke-linejoin="round" 
+                                                  stroke-width="2" 
+                                                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" 
+                                              />
+                                          </svg>
+                                          <span class="indicator-item"></span>
+                                      </div>
+                                  </label>
+                              </div>
+                          </li>
+                      </div>
+                      <!-- Main Navigation Links -->
+                      <div class="flex flex-col items-center">
+                          <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
+                          <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
+                          <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+                      </div>
+                  </ul>
+              </div>
+              </div>
+            </section>
         </nav>
+
+        <!-- Hero Secton -->
+        <section class="lg:container mx-auto my-10">
+          <div class="carousel w-full">
+              <div id="slide1" class="carousel-item relative w-full h-[700px]">
+                  <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center bg-gradient-to-r from-[#ea9fea] to-[#060706]">
+                      <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28">
+                        <div class="space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-4/6 xl:pl-14">
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h1 class="font-normal text-3xl md:text-7xl lg:text-8xl text-black">IPhone <span class="font-semibold">14 Pro</span></h1>
+                            <p class="font-normal text-[12px] md:text-lg md:w-full lg:w-5/6">Created to change everything for the better.For everyone</p>
+                            <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
+                        </div>
+                        <div class=" absolute md:right-[-8%] lg:right-0 xl:right-[5%] top-[40%] sm:top-[30%] md:top-[25%] lg:top-[20%] xl:top-[15%] lg:-rotate-12 xl:rotate-12 flex justify-center items-center md:w-4/6 lg:w-3/6">
+                            <img src="images/hero1.png" alt="">
+                        </div>
+                      </div>
+                      <div class="absolute left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      </div>
+                  </div>
+              </div>
+              <div id="slide2" class="carousel-item relative w-full h-[700px]">
+                  <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center bg-gradient-to-r from-[#b86871] to-[#4f626f]">
+                      <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28">
+                        <div class="space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-4/6 xl:pl-14">
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h1 class="font-normal text-3xl md:text-7xl lg:text-8xl text-black">Galaxy <span class="font-semibold">S6 Edge</span></h1>
+                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute right-0 md:right-[-12%] lg:right-[-8%] top-[25%] sm:top-0 md:top-[-15%] lg:top-[-10%] xl:top-[-30%] md:rotate-[-8] lg:rotate-[-10] flex justify-center items-center md:w-4/6 lg:w-3/6">
+                            <img src="images/hero2.png" alt="">
+                        </div>
+                      </div>
+                      <div class="absolute left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      </div>
+                  </div>
+              </div>
+              <div id="slide3" class="carousel-item relative w-full h-[700px]">
+                  <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center bg-gradient-to-r from-[#698297] to-[#232323ec]">
+                      <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28">
+                        <div class="space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-4/6 xl:pl-14">
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h1 class="font-normal text-3xl md:text-7xl lg:text-8xl text-black">IPhone <span class="font-semibold">14 Pro</span></h1>
+                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
+                        </div>
+                        <div class="absolute right-[5%] md:right-[-12%] lg:right-[3%] xl:right-[-5%] top-[25%] sm:top-[5%] md:top-[5%] xl:top-[-25%] rotate-0 lg:-rotate-12 flex justify-center items-center md:w-4/6 lg:w-3/6">
+                            <img src="images/hero3.png" alt="" class="w-[]">
+                        </div>
+                      </div>
+                      <div class="absolute left-2 right-2 g:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide4" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      </div>
+                  </div>
+              </div>
+              <div id="slide4" class="carousel-item relative w-full h-[700px]">
+                  <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center bg-gradient-to-r from-[#437f7a] to-[#1b3d45]">
+                      <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28">
+                        <div class="space-y-3 pt-5 md:space-y-5 md:w-6/12  lg:w-4/6 xl:pl-14">
+                            <h5 class="font-normal text-[12px] md:text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h1 class="font-normal text-3xl md:text-7xl lg:text-8xl">IPhone <span class="font-semibold">14 Pro</span></h1>
+                            <p class="font-normal text-[12px] md:text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
+                        </div>
+                        <div class=" absolute md:right-[-17%] lg:right-[-3%] xl:right-[-5%] top-[25%] sm:top-[15%] md:top-[15%] lg:top-[-5%] xl:top-[-10%] flex justify-center items-center md:w-4/6 lg:w-3/6">
+                            <img src="images/hero4.png" alt="">
+                        </div>
+                      </div>
+                      <div class="absolute left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
     </header>
     <main>
 
