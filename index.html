@@ -23,7 +23,7 @@
             extend: {
                 colors: {
                     clifford: '#da373d',
-                    'primary-colour': '#ABEF5F',
+                    'primary-colour': '#171495',
                 },
                 fontFamily: {
                     'montserrat': ['Montserrat', 'sans-serif'],
@@ -35,10 +35,127 @@
 
     <!-- Fontawesome library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Raw CSS -->
 </head>
 <body class="font-montserrat">
-    <header>
-        
+    <header class="bg-[#1A187A]">
+        <!-- Navbar Section -->
+        <nav class="border-2 border-green-500 flex justify-between items-center md:container mx-auto px-2 my-5">
+          <!-- Navbar Start -->
+            <div class="w-1/2 lg:w-2/12 flex-start">
+              <button>
+                <img src="images/logo.png" alt="" class="w-full">
+              </button>
+            </div>
+            <!-- Navbar Center -->
+            <div class="w-[30%] hidden lg:flex">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered pl-10" />
+              </div>
+            </div>
+            <!-- Navbar End -->
+            <div class="flex items-center justify-between lg:justify-end gap-5">
+              <!-- Main Navigation Links -->
+              <div class="hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
+                <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
+                <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+              </div>
+              <!-- Cart Button -->
+              <div class="hidden lg:flex gap-5">
+                <div class="hidden md:flex dropdown dropdown-left">
+                  <div tabindex="0" role="button" class="btn border-none btn-circle hover">
+                      <div class="indicator">
+                        <img src="images/icon/cart.svg" alt="" class="w-7 h-7">
+                        <span class="indicator-item"></span>
+                      </div>
+                  </div>
+                  <div
+                      tabindex="0"
+                      class="card card-compact dropdown-content bg-base-100 z-[1] mt-14 w-52 shadow">
+                      <div class="card-body">
+                      <span class="text-lg font-bold">0 Items</span>
+                      <span class="text-info">Subtotal: $0</span>
+                      <div class="card-actions">
+                          <button class="btn text-white bg-primary-colour hover:bg-primary-colour btn-block">View cart</button>
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="dropdown dropdown-end">
+                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                    <div class="w-10 rounded-full">
+                      <img
+                        alt="Profile"
+                        src="images/icon/profile.svg"
+                        class="w-6 h-6"
+                      />
+                    </div>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-36 p-2 shadow">
+                    <li>
+                      <a class="justify-between">
+                        Profile
+                        <span class="badge bg-primary-colour text-white">New</span>
+                      </a>
+                    </li>
+                    <li><a>Settings</a></li>
+                    <li><a>Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Dropdown Menu for Small Device -->
+              <div class="dropdown dropdown-left">
+                <!-- Menu Button -->
+                <div tabindex="0" role="button" class="btn bg-white py-1 border-none lg:hidden">
+                    <img src="images/icon/menu.svg" alt="menubar" class="w-6 md:w-8 h-6 md:h-8">
+                </div>
+                <!-- Menu-->
+                <ul tabindex="0" class="menu menu-xs items-center bg-primary-colour dropdown-content bg-base-100 rounded-box z-[1] mt-8 md:mt-14 w-24 md:w-32 p-0 shadow md:space-y-2">
+                    <div class="flex flex-col gap-2 items-center">
+                        <li>
+                          <div class="form-control">
+                            <input type="text" placeholder="Search" class="input input-bordered h-7 text-center focus:text-left w-full p-0 pl-1" />
+                          </div>
+                        </li>
+                        <li class="flex">
+                            <div class="dropdown dropdown-left hover:bg-white">
+                                <label tabindex="0" role="button" class="bg-white border-none hover:bg-[#acef5fcb] p-1 px-2 rounded-full">
+                                    <div class="indicator">
+                                        <svg 
+                                            xmlns="http://www.w3.org/2000/svg" 
+                                            class="mt-1 h-4 w-4" 
+                                            fill="none" 
+                                            viewBox="0 0 24 24" 
+                                            stroke="currentColor">
+                                            <path 
+                                                stroke-linecap="round" 
+                                                stroke-linejoin="round" 
+                                                stroke-width="2" 
+                                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" 
+                                            />
+                                        </svg>
+                                        <span class="indicator-item"></span>
+                                    </div>
+                                </label>
+                            </div>
+                        </li>
+                    </div>
+                    <!-- Main Navigation Links -->
+                    <div class="flex flex-col items-center">
+                        <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
+                        <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
+                        <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+                    </div>
+                </ul>
+            </div>
+            </div>
+        </nav>
     </header>
     <main>
 
