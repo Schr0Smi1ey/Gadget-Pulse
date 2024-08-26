@@ -37,6 +37,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Raw CSS -->
+
+    <style>
+      .bg-airpod {
+        overflow: hidden;
+        background-image: url('images/file.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -200px;
+        left: -20%;
+      }
+      .bg-airpod-1 {
+        overflow: hidden;
+        background-image: url('images/file.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: -250px;
+        left: -20%;
+      }
+    </style>
 </head>
 <body class="font-montserrat">
     <header>
@@ -242,7 +261,39 @@
         </section>
     </header>
     <main>
-
+      <!-- Products Section -->
+       <section class="md:container mx-auto my-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <!-- Ipad Section -->
+          <div class="order-1 pt-8 sm:pt-14 md:pt-20 overflow-hidden flex justify-between items-center">
+            <div class="pl-2 w-[40%] -mb-24 2xl:-mb-28">
+              <img src="images/ipad1.png" alt="">
+            </div>
+            <div class="sm:mb-10 w-[50%] lg:p-3 space-y-4 items-end">
+              <h2 class="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black">iPad 9</h2>
+              <p class="font-medium text-xs sm:text-base text-[#919191]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            </div>
+          </div>
+          <!-- Macbook Section -->
+          <div class="order-3 relative py-10 space-y-2 sm:space-y-4 md:py-20 lg:py-0 md:pl-5 2xl:pl-10 bg-[#EDEDED] row-span-2 overflow-hidden flex flex-col md:flex-row items-center">
+            <div class="pl-5 xl:pl-10 space-y-3 2xl:space-y-5 md:w-[55%]">
+              <h1 class="font-normal text-black text-4xl md:text-5xl lg:text-6xl">Macbook<br><span class="font-semibold">Air</span></h1>
+              <p class="font-medium text-xs sm:text-base text-[#919191]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+              <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-[#27448E] hover:bg-[#27448E] text-white">Shop Now</button>
+            </div>
+            <div class="md:absolute sm:w-[70%] lg:w-[100%] right-[-30%] lg:right-[-60%]">
+              <img src="images/macbook.png" alt="">
+            </div>
+          </div>
+          <!-- Airpod Section -->
+          <div class="order-2 md:order-4 py-5 md:p-6  flex justify-end bg-airpod-1 md:bg-airpod bg-[#adc2d7]">
+            <div class="p-1 sm:p-2  space-y-4 w-[45%] md:w-[30%] lg:w-[40%] 2xl:w-[25%]">
+              <h1 class="font-normal text-black text-xl md:text-2xl lg:text-3xl">Apple<br>AirPods<br><span class="font-semibold">Max</span></h1>
+              <p class="font-medium text-xs sm:text-base text-[#FFFFFF]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+            </div>
+          </div>
+        </div>
+       </section>
     </main>
     <footer>
 
