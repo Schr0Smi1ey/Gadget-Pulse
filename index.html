@@ -75,16 +75,17 @@
                 </div>
               </div>
               <!-- Navbar End -->
-              <div class="flex items-center justify-between lg:justify-end gap-5">
+              <div class="text-white flex items-center justify-between lg:justify-end gap-5">
                 <!-- Main Navigation Links -->
-                <div class="hidden lg:flex">
+                <div class="font-normal text-base hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
-                  <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
-                  <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
-                  <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+                  <li class="font-medium rounded-lg"><a>Home</a></li>
+                  <li class="opacity-30 rounded-lg"><a>About</a></li>
+                  <li class="opacity-30 rounded-lg"><a>Contact Us</a></li>
                 </div>
-                <!-- Cart Button -->
+                <!-- Cart and Profile Button -->
                 <div class="hidden lg:flex gap-5">
+                  <!-- Cart Button -->
                   <div class="hidden md:flex dropdown dropdown-left">
                     <div tabindex="0" role="button" class="btn border-none btn-circle hover">
                         <div class="indicator">
@@ -104,6 +105,7 @@
                         </div>
                     </div>
                   </div>
+                  <!-- Profile Button -->
                   <div class="dropdown dropdown-end">
                     <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
                       <div class="w-10 rounded-full">
@@ -138,42 +140,45 @@
                   <!-- Menu-->
                   <ul tabindex="0" class="menu menu-xs items-center bg-primary-colour dropdown-content bg-base-100 rounded-box z-[1] mt-8 md:mt-14 w-24 md:w-32 p-0 shadow md:space-y-2">
                       <div class="flex flex-col gap-2 items-center">
+                        <!-- Search Button -->
                           <li>
                             <div class="form-control">
                               <input type="text" placeholder="Search" class="input input-bordered h-7 text-center focus:text-left w-full p-0 pl-1" />
                             </div>
                           </li>
-                          <li class="flex">
-                              <div class="dropdown dropdown-left hover:bg-white">
-                                  <label tabindex="0" role="button" class="bg-white border-none hover:bg-[#acef5fcb] p-1 px-2 rounded-full">
-                                      <div class="indicator">
-                                          <svg 
-                                              xmlns="http://www.w3.org/2000/svg" 
-                                              class="mt-1 h-4 w-4" 
-                                              fill="none" 
-                                              viewBox="0 0 24 24" 
-                                              stroke="currentColor">
-                                              <path 
-                                                  stroke-linecap="round" 
-                                                  stroke-linejoin="round" 
-                                                  stroke-width="2" 
-                                                  d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" 
-                                              />
-                                          </svg>
-                                          <span class="indicator-item"></span>
-                                      </div>
-                                  </label>
+                          <!-- Profile Button -->
+                          <div>
+                            <div tabindex="0" role="button" class="btn btn-circle hover:bg-[#3f62bc] avatar">
+                              <div class="w-10 rounded-full">
+                                <img
+                                  alt="Profile"
+                                  src="images/icon/profile.svg"
+                                  class="w-6 h-6"
+                                />
                               </div>
-                          </li>
+                            </div>
+                          </div>
+                          <!-- Cart Button -->
+                          <div>
+                            <div tabindex="0" role="button" class="btn btn-circle hover:bg-[#3f62bc] avatar">
+                              <div class="w-10 rounded-full">
+                                <img
+                                  alt="Profile"
+                                  src="images/icon/cart.svg"
+                                  class="w-6 h-6"
+                                />
+                              </div>
+                            </div>
+                          </div>
                       </div>
                       <!-- Main Navigation Links -->
-                      <div class="flex flex-col items-center">
-                          <li class="font-medium text-base text-white rounded-lg"><a>Home</a></li>
-                          <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>About</a></li>
-                          <li class="font-normal text-base text-white opacity-30 rounded-lg"><a>Contact Us</a></li>
+                      <div class="font-normal text-base flex flex-col items-center">
+                          <li class="font-medium rounded-lg"><a>Home</a></li>
+                          <li class="opacity-30 rounded-lg"><a>About</a></li>
+                          <li class="opacity-30 rounded-lg"><a>Contact Us</a></li>
                       </div>
                   </ul>
-              </div>
+                </div>
               </div>
             </section>
         </nav>
@@ -194,9 +199,9 @@
                             <img src="images/hero1.png" alt="">
                         </div>
                       </div>
-                      <div class="absolute left-2 right-2 lg:left-10 lg:right-10 xl:left-12 xl:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide4" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
-                        <a href="#slide2" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      <div class="absolute text-black left-2 right-2 lg:left-10 lg:right-10 xl:left-12 xl:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❯</a>
                       </div>
                   </div>
               </div>
@@ -204,18 +209,18 @@
                   <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center justify-around bg-gradient-to-r from-[#b86871] to-[#4f626f]">
                       <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28">
                         <div class="mb-2 space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-4/6 xl:w-full">
-                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Explore. Beyond Boundaries.</h5>
                             <h1 class="font-normal text-3xl md:text-5xl lg:text-6xl xl:7xl text-black">Galaxy <span class="font-semibold">S6 Edge</span></h1>
-                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Crafted to redefine your world. For those who push the limits.</p>
                             <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
                         </div>
                         <div class="flex justify-start items-start md:justify-center md:items-center w-full md:w-4/6">
                             <img src="images/hero2.png" alt="">
                         </div>
                       </div>
-                      <div class="absolute left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide1" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
-                        <a href="#slide3" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      <div class="absolute text-black left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❯</a>
                       </div>
                   </div>
               </div>
@@ -223,18 +228,18 @@
                   <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center justify-around lg:justify-evenly bg-gradient-to-r from-[#404a5a] to-[#4c7ce3]">
                       <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28 lg:mr-20">
                         <div class="mb-2 space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-4/6 xl:w-full">
-                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-70">Innovation. In Your Hands.</h5>
                             <h1 class="font-normal text-3xl md:text-5xl lg:text-6xl xl:7xl text-black">IPhone <span class="font-semibold">14 Pro</span></h1>
-                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <p class="font-normal text-[12px] md:text-lg lg:w-5/6">Designed to enhance every moment. For the thinkers and dreamers.</p>
                             <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
                         </div>
                         <div class="flex justify-center items-center md:w-[40%] xl:w-1/2 rotate-12 md:-rotate-12">
                             <img src="images/hero3.png" alt="">
                         </div>
                       </div>
-                      <div class="absolute left-2 right-2 g:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
-                        <a href="#slide4" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      <div class="absolute text-black left-2 right-2 g:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide4" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❯</a>
                       </div>
                   </div>
               </div>
@@ -242,18 +247,18 @@
                   <div class="w-full px-16 lg:px-0 relative overflow-hidden flex flex-col md:flex-row items-center justify-evenly 2xl:justify-center bg-gradient-to-r from-[#437f7a] to-[#1b3d45]">
                       <div class="text-center md:text-left flex flex-col items-center md:flex-row lg:ml-28 2xl:ml-36">
                         <div class="mb-2 space-y-3 pt-5 md:space-y-5 md:w-6/12 lg:w-3/6">
-                            <h5 class="font-normal text-[12px] md:text-[12px] md:text-2xl text-[#1E046A] opacity-40">Pro.Beyond.</h5>
+                            <h5 class="font-normal text-[12px] md:text-2xl text-[#1E046A] opacity-40">Precision. Redefined.</h5>
                             <h1 class="font-normal text-3xl md:text-5xl lg:text-6xl xl:7xl text-black">IPhone <span class="font-semibold">14 Pro</span></h1>
-                            <p class="font-normal text-[12px] md:text-[12px] md:text-lg lg:w-5/6">Created to change everything for the better. For everyone</p>
+                            <p class="font-normal text-[12px] md:text-[12px] md:text-lg lg:w-5/6">Engineered for those who demand perfection. For the creators.</p>
                             <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-primary-colour hover:bg-primary-colour text-white">Shop Now</button>
                         </div>
                         <div class="flex justify-center items-center md:w-[40%] lg:w-[30%] 2xl:w-[25%]">
                             <img src="images/hero4.png" alt="">
                         </div>
                       </div>
-                      <div class="absolute left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide3" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❮</a>
-                        <a href="#slide1" class="btn btn-circle text-2xl text-black bg-transparent border-none hover:bg-orange-100">❯</a>
+                      <div class="absolute text-black left-2 right-2 lg:left-12 lg:right-12 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-2xl bg-transparent border-none hover:bg-orange-100">❯</a>
                       </div>
                   </div>
               </div>
@@ -271,14 +276,14 @@
             </div>
             <div class="sm:mb-10 w-[50%] lg:p-3 space-y-4 items-end">
               <h2 class="font-medium text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black">iPad 9</h2>
-              <p class="font-medium text-xs sm:text-base text-[#919191]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+              <p class="font-medium text-xs sm:text-base text-[#919191]">Perfectly portable. Versatile for all. Enjoy the power of the A13 Bionic chip, making multitasking effortless and smooth.</p>
             </div>
           </div>
           <!-- Macbook Section -->
           <div class="order-3 relative py-10 space-y-2 sm:space-y-4 md:py-20 lg:py-0 md:pl-5 2xl:pl-10 bg-[#EDEDED] row-span-2 overflow-hidden flex flex-col md:flex-row items-center">
             <div class="pl-5 xl:pl-10 space-y-3 2xl:space-y-5 md:w-[55%]">
               <h1 class="font-normal text-black text-4xl md:text-5xl lg:text-6xl">Macbook<br><span class="font-semibold">Air</span></h1>
-              <p class="font-medium text-xs sm:text-base text-[#919191]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+              <p class="font-medium text-xs sm:text-base text-[#919191]">Thin, light, and powerful. The M1 chip delivers incredible performance, efficiency, and battery life.</p>
               <button class="btn px-2 md:px-4 lg:px-8 font-[900] bg-[#27448E] hover:bg-[#27448E] text-white">Shop Now</button>
             </div>
             <div class="md:absolute sm:w-[70%] lg:w-[100%] right-[-30%] lg:right-[-60%]">
@@ -289,7 +294,7 @@
           <div class="order-2 md:order-4 py-5 md:p-6  flex justify-end bg-airpod-1 md:bg-airpod bg-[#adc2d7]">
             <div class="p-1 sm:p-2  space-y-4 w-[45%] md:w-[30%] lg:w-[40%] 2xl:w-[25%]">
               <h1 class="font-normal text-black text-xl md:text-2xl lg:text-3xl">Apple<br>AirPods<br><span class="font-semibold">Max</span></h1>
-              <p class="font-medium text-xs sm:text-base text-[#FFFFFF]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
+              <p class="font-medium text-xs sm:text-base text-[#FFFFFF]">Unmatched sound experience. Feel the immersive audio with spatial sound that adapts to your environment.</p>
             </div>
           </div>
         </div>
@@ -301,9 +306,9 @@
             <!-- Catagory Heading -->
             <div class="p-5 flex justify-between items-center flex-wrap space-y-4 sm:space-y-0">
               <h1 class="font-bold text-2xl text-black">Browse By Category</h1>
-              <div class="flex gap-10 justify-center items-center flex-wrap">
-                <button class="flex justify-center items-center text-black text-lg md:text-xl lg:text-2xl btn btn-circle rounded-full bg-white hover:bg-[#3f62bc]"><i class="fa-solid fa-chevron-left"></i></button>
-                <button class="flex justify-center items-center text-black text-lg md:text-xl lg:text-2xl btn btn-circle rounded-full bg-white hover:bg-[#3f62bc]"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="text-black flex gap-10 justify-center items-center flex-wrap">
+                <button class="flex justify-center items-center text-lg md:text-xl lg:text-2xl btn btn-circle rounded-full bg-white hover:bg-[#3f62bc]"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="flex justify-center items-center text-lg md:text-xl lg:text-2xl btn btn-circle rounded-full bg-white hover:bg-[#3f62bc]"><i class="fa-solid fa-chevron-right"></i></button>
               </div>
             </div>
             <!-- Catagory Card -->
@@ -559,13 +564,13 @@
 
          <!-- 11.11 Sale Offer Section -->
           <section class="md:container mx-auto my-10 bg-gradient-to-r from-[#2b3774] to-[#3775b7]">
-            <div class="border-2 border-red-600 overflow-hidden flex flex-col sm:flex-row items-center justify-between">
+            <div class="overflow-hidden flex flex-col sm:flex-row items-center justify-between">
               <div class="w-3/4 py-10 -mt-24 sm:mt-0 sm:-ml-32 md:-ml-44 lg:-ml-56 xl:-ml-64 sm:mr-20">
                 <img src="images/Computer1.png" alt="" class="-rotate-12">
               </div>
               <div class="p-4 sm:p-0 flex flex-col items-center md:w-3/4 sm:gap-1 gap-3 lg:gap-5 md:mx-0 lg:mx-8 xl:mx-20">
                 <h1 class="font-[900] text-3xl md:text-4xl lg:text-7xl text-[#25177B]">11.11 <span class="text-white">Sale</span></h1>
-                <p class="text-center text-xs md:text-base text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+                <p class="text-center text-xs md:text-base text-white">Get the best deals on mobile phones, tablets, and all your favorite electronics. Don't miss out on our limited-time offers!</p>
                 <button class="btn min-h-0 h-full bg-[#25177B] hover:bg-[#25177B] font-medium px-2 py-1 md:font-semibold text-center text-base md:text-lg lg:text-xl text-white">Discover More!</button>
               </div>
               <div class="w-[65%] -mb-12 sm:mb-0 sm:-mr-28 md:-mr-36 lg:-mr-48 xl:-mr-60 sm:ml-20">
@@ -610,9 +615,6 @@
               <li>Terms of use of the site</li>
             </ul>
           </div>
-          <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            
-          </div> -->
         </div>
       </section>
     </footer>
